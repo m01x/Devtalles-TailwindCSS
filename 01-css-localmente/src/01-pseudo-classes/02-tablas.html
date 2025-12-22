@@ -10,21 +10,34 @@
   <body>
     <h1>Tablas</h1>
     <hr />
-
-    <table>
-      <thead>
+<!-- 
+  w-full: Toma todo el espacio disponible horizontalmente
+  min-w-max: Establece un ancho mínimo según el contenido máximo
+  overflow-x-auto: Permite desplazamiento horizontal cuando el contenido excede el ancho
+  capitalize: Convierte la primera letra de cada palabra a mayúscula
+  lowercase: Convierte todo el texto a minúsculas
+  flex: Activa el modelo de caja flexible (flexbox)
+  flex-col: Organiza los elementos en columna (vertical)
+  items-center: Centra los elementos en el eje transversal
+  justify-center: Centra los elementos en el eje principal
+-->
+<div class="overflow-x-auto">
+<table class="w-full min-w-max">
+      <thead class="bg-gray-900/35 hidden md:table-header-group">
         <tr>
-          <th>Foto</th>
-          <th>Nombre</th>
-          <th>Edad</th>
-          <th>Email</th>
+          <th class="p-3">Foto</th>
+          <th class="p-3">Nombre</th>
+          <th class="p-3">Edad</th>
+          <th class="p-3 text-right">Email</th>
         </tr>
       </thead>
       <tbody>
-        <!--  -->
-        <tr>
+        <!-- pseudoclase odd ; para impares , y even, para pares. dark: se esta aplicando para el tema oscuro ;) -->
+        <tr class="mb-5 flex flex-col items-center justify-center md:table-row p-2 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">
           <td>
-            <img
+            <img 
+            class="h-12 w-12 rounded-full"
+            
               src="https://randomuser.me/api/portraits/men/1.jpg"
               alt="Foto de Juan Pérez"
             />
@@ -33,9 +46,10 @@
           <td>28</td>
           <td>juan.perez@email.com</td>
         </tr>
-        <tr>
+        <tr class="mb-5 flex flex-col items-center justify-center md:table-row p-2 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">
           <td>
-            <img
+            <img 
+            class="h-12 w-12 rounded-full"
               src="https://randomuser.me/api/portraits/women/2.jpg"
               alt="Foto de Maria Gomez"
             />
@@ -44,9 +58,10 @@
           <td>34</td>
           <td>maria.gomez@email.com</td>
         </tr>
-        <tr>
+        <tr class="mb-5 flex flex-col items-center justify-center md:table-row p-2 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">
           <td>
-            <img
+            <img 
+            class="h-12 w-12 rounded-full"
               src="https://randomuser.me/api/portraits/men/3.jpg"
               alt="Foto de Luis Fernández"
             />
@@ -55,9 +70,10 @@
           <td>25</td>
           <td>luis.fernandez@email.com</td>
         </tr>
-        <tr>
+        <tr class="mb-5 flex flex-col items-center justify-center md:table-row p-2 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">
           <td>
-            <img
+            <img 
+            class="h-12 w-12 rounded-full"
               src="https://randomuser.me/api/portraits/women/4.jpg"
               alt="Foto de Ana Ruiz"
             />
@@ -66,9 +82,10 @@
           <td>30</td>
           <td>ana.ruiz@email.com</td>
         </tr>
-        <tr>
+        <tr class="mb-5 flex flex-col items-center justify-center md:table-row p-2 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">
           <td>
-            <img
+            <img 
+            class="h-12 w-12 rounded-full"
               src="https://randomuser.me/api/portraits/men/5.jpg"
               alt="Foto de Carlos Torres"
             />
@@ -77,9 +94,10 @@
           <td>41</td>
           <td>carlos.torres@email.com</td>
         </tr>
-        <tr>
+        <tr class="mb-5 flex flex-col items-center justify-center md:table-row p-2 odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">
           <td>
-            <img
+            <img 
+            class="h-12 w-12 rounded-full"
               src="https://randomuser.me/api/portraits/women/6.jpg"
               alt="Foto de Laura Sánchez"
             />
@@ -90,7 +108,9 @@
         </tr>
       </tbody>
     </table>
+</div>
+    
 
-    <a href="03-formularios.html">Siguiente Formularios</a>
+    <a href="03-formularios.html" class="text-blue-500 hover:text-blue-300 cursor-pointer">Siguiente - Formularios</a>
   </body>
 </html>
