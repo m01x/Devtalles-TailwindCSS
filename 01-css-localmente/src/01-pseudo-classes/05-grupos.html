@@ -12,13 +12,14 @@
     <hr />
 
     <div
-      class="mt-10 rounded-md border bg-slate-800 p-6 text-white transition-colors hover:bg-sky-400"
+      class="group mt-10 rounded-md border bg-slate-800 p-6 text-white transition-colors hover:bg-sky-400"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
         height="48"
         viewBox="0 0 16 16"
+        class="text-sky-400 group-hover:text-sky-800"
       >
         <path
           fill="currentColor"
@@ -30,8 +31,8 @@
       <p class="mb-3">
         Este es un contenedor que cambiará de color si contiene un enlace.
       </p>
-      <span class="">Ir al enlace</span>
-      <a href="#" class="underline">Visita este enlace</a>
+      <span class="hidden group-has-[a]:block">Ir al enlace</span>
+      <a href="#" class="underline group-has-[a]:text-sky-400 group-hover:text-sky-800">Visita este enlace</a>
     </div>
 
     <div
